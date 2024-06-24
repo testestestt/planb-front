@@ -1,0 +1,32 @@
+.vh-100{
+    height: 100vh;
+}
+
+.visibility-hidden{
+    visibility: hidden;
+    position: absolute;
+}
+
+.py-md-31{
+    @include media-breakpoint-up(md){
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+}
+.py-lg-28{
+    @include media-breakpoint-up(lg){
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+}
+
+.gap-md-40{
+    @include media-breakpoint-up(md){
+        gap: 40px;
+    }
+}
+.gap-lg-50{
+    @include media-breakpoint-up(lg){
+        gap: 50px;
+    }
+}
