@@ -1,0 +1,15 @@
+#t-accordion{
+    & .divider{
+        width: 100%;
+        height: 1px;
+        background-color: $black;
+    }
+
+    & .arrow{
+        &::after{
+            content: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.03448 18V1M8.03448 1L15.069 7.44828M8.03448 1L1 7.44828' stroke='%23242323'/%3E%3C/svg%3E%0A");
+        }
+    }
+    
+}
+

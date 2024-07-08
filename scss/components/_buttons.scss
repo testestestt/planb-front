@@ -1,0 +1,18 @@
+.t-btn{
+    padding: 7px 20px 11px;
+    border-radius: 30px;
+    display: flex;
+    column-gap: 10px;
+    @include h3;
+
+    &.yellow{
+        color: $yellow;
+        border: 1px solid $yellow;
+    }
+
+    &-donar{
+        &::after{
+            content: url("data:image/svg+xml,%3Csvg width='11' height='12' viewBox='0 0 11 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 11L10.5 1.00001M10.5 1.00001V9.17518M10.5 1.00001L2.10587 1' stroke='%23FEBE1F'/%3E%3C/svg%3E%0A");
+        }
+    }
+}
