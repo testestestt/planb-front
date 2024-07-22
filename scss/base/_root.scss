@@ -84,12 +84,79 @@ input{
     border: none;
 }
 
+// 3.1 Home Page 
+
 #home-hero{
     background-color: $black;
 }
 
 #faq-home{
     background-color: $yellow;
-
-    
 }
+
+.item-accordion{
+    .in-cont{
+        opacity: 0;
+        transition: opacity 0.15s ease;
+        transform: translateY(-2px);
+        @include media-breakpoint-up(md){
+            transform: translateY(0);
+        }
+        @include media-breakpoint-up(lg){
+            transform: translateY(-8px);
+        }
+    }
+
+    .collapsing:not(.active){
+        overflow: visible !important;
+    }
+    .collapse.show{
+        .in-cont{
+            transition: opacity 0.25s ease;
+            opacity: 1;
+        }
+    }
+    .accordion-head{
+        &.collapsed{
+            .arrow{
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .arrow{
+        // transition: transform 0.s ease;
+        transform-origin: center;
+    }
+}
+
+
+.grid-images{
+    display: grid;
+    grid-template-columns: 1;
+    gap: 10px;
+    @include media-breakpoint-up(md){
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+.grid-text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    @include media-breakpoint-up(md){
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+.cont-non{
+}
+
+
+
+
+
+

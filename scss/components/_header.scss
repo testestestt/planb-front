@@ -4,9 +4,10 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    transition: background-color 0.5s cubic-bezier(.23, 1, .32, 1), color 0.5s cubic-bezier(.23, 1, .32, 1);
+    transition: background-color 0.6s cubic-bezier(.23, 1, .32, 1), color 0.6s cubic-bezier(.23, 1, .32, 1);
+    z-index: 1;
     .circle-menu{
-        transition: background-color 0.5s cubic-bezier(.23, 1, .32, 1);
+        transition: background-color 0.6s cubic-bezier(.23, 1, .32, 1);
         border-radius: 100%;
         background-color: $offwhite;
         width: 20px;
@@ -28,7 +29,27 @@ header{
             background-color: $offwhite;
             top: calc(100% - 4px);
             left: 0;
-            transition: background-color 0.5s cubic-bezier(.23, 1, .32, 1);
+        }
+    }
+
+    .trans-prob{
+        flex: none;
+        max-width: 0;
+        overflow: hidden;
+        transition: max-width 0.8s cubic-bezier(.23, 1, .32, 1) ;
+        .trans-word{
+            p{
+                white-space: nowrap;
+                transform: translateY(calc(100% + 2px));
+                transition: transform 0.6s cubic-bezier(.23, 1, .32, 1);
+            }
+        }
+        
+    }
+    .trans-principal-word{
+        p, a{
+            opacity: 1;
+            transition: opacity 0.6s cubic-bezier(.23, 1, .32, 1);
         }
     }
 
@@ -39,10 +60,33 @@ header{
             background-color: $black;
         }
         .language-link{
-            color: $black;
-            &::after{
-                background-color: $black;
+            color: $white;
+        }
+
+        .trans-prob{
+            transition: max-width 0.6s cubic-bezier(.23, 1, .32, 1);
+            max-width: 150px;
+
+    
+            .trans-word{
+                p{
+                    will-change: transform;
+                    transform: translateY(0);
+                    transition: transform 0.6s cubic-bezier(.23, 1, .32, 1) 0.2s;
+                }
             }
         }
+
+        .trans-principal-word{
+            p, a{
+                @include media-breakpoint-up(md){
+                    color: $white;
+                    opacity: 0;
+                    transition: opacity 0 cubic-bezier(.23, 1, .32, 1) 0.6s;
+                }   
+            }
+        }
+        
     }
+
 }

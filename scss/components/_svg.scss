@@ -1,0 +1,14 @@
+.ast-svg{
+    @include media-breakpoint-down(md){
+        width: 25px;
+        height: 25px;
+        stroke-width: 2px;
+    }
+}
+
+.arrow-svg{
+    @include media-breakpoint-down(md){
+        width: 18px;
+        height: 18px;
+    }
+}
