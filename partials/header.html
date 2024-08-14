@@ -1,6 +1,6 @@
-<div class="container-fluid px-15 px-md-30 px-lg-40">
-    <div class="row py-20 py-md-31 py-lg-28">
-        <div class="col-8 col-md-4 align-items-center d-none d-md-flex">
+<div class="container-fluid px-15 px-md-30 px-lg-40 position-relative">
+    <div class="row p-header">
+        <div class="col-8 col-md-4 align-items-center d-none d-md-flex z-index-1 brand-words">
             <a href="#" class="trans-prob word-mark">
                 <div class="trans-word pr-md-15">
                     <p class="word-mark">
@@ -8,17 +8,15 @@
                     </p>
                 </div>
             </a>
-            <a href="#" class="p-bold will-change">
+            <a href="#" class="p-bold will-change sub-wordmark">
                 Fundación
                 <br>
                 Non Profit
             </a>
         </div>
         <div class="col-8 col-md-4 d-flex justify-content-md-center align-items-center">
-            <a href="#" class="d-flex gap-3 align-items-center">
-                <div class="trans-principal-word">
-                    <p class="word-mark">Plan B</p>
-                </div>
+            <a href="#" class="d-flex gap-3 align-items-center trans-principal-word">
+                <p class="word-mark">Plan B</p>
                 <p class="p-bold d-md-none">
                     Fundación
                     <br>
@@ -30,9 +28,52 @@
             <div class="trans-principal-word">
                 <a href="#" class="language-link d-none d-md-block">English</a>
             </div>
-            <a href="#" class="circle-menu" data-toggle="show" data-target=".language-link">
+            <a href="#" class="circle-menu" data-toggle="show" data-target=".menu, .circle-menu, .brand-words, .trans-principal-word">
                 <span class="visibility-hidden">Circle Menu</span>
             </a>
+        </div>
+    </div>
+    <div class="menu px-15 px-md-30 px-lg-40">
+        <nav class="pt-145 pt-md-175">
+            <ul class="d-flex gap-15 gap-md-20 flex-column">
+                <li class="nav-item active">
+                    <a href="#" class="display c-white nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="display c-white nav-link">Historias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="display c-white nav-link">Donar</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mt-auto pb-70 c-white op-trans">
+            <div class="row justify-content-between">
+                <div class="col-7 col-md-6 col-lg-4 d-flex flex-column justify-content-end align-items-start gap-2">
+                    <a href="#" class="lang-in-menu">English</a>
+                    <a href="#" >Terminos y condiciones</a>
+                </div>
+                <div class="col-5 col-md-6 col-lg-4 d-flex flex-column align-items-end gap-2">
+                    <a href="#" class="p-bold d-flex gap-2 align-items-center">
+                        Contacto
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L11 1.00001M11 1.00001V9.17518M11 1.00001L2.60587 1" stroke="#F9F9F0"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="p-bold d-flex gap-2 align-items-center">
+                        Instagram
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L11 1.00001M11 1.00001V9.17518M11 1.00001L2.60587 1" stroke="#F9F9F0"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="p-bold d-flex gap-2 align-items-center">
+                        Facebook
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L11 1.00001M11 1.00001V9.17518M11 1.00001L2.60587 1" stroke="#F9F9F0"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>

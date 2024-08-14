@@ -2,7 +2,14 @@
     @include media-breakpoint-down(md){
         width: 25px;
         height: 25px;
-        stroke-width: 2px;
+        path{
+            stroke-width: 3.5px;
+        }
+    }
+    @include media-breakpoint-up(lg){
+        path{
+            stroke-width: 4px;
+        }
     }
 }
 

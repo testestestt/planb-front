@@ -43,6 +43,12 @@
     background-color: $black;
 }
 
+.divider-v-f{
+    width: 1px;
+    align-self: stretch;
+    background-color: $black;
+}
+
 .divider-h{
     width: 100%;
     height: 1px;
@@ -104,7 +110,35 @@
     }
 }
 
+.z-index-1{
+    z-index: 1;
+    position: relative;
+}
+
 
 .will-change{
     will-change: transform;
+}
+
+.gap-15{
+    gap: 15px;
+}
+
+.gap-md-20{
+    @include media-breakpoint-up(md){
+        gap: 20px;
+    }
+}
+
+.p-header{
+    padding-top: 19px;
+    padding-bottom: 22px;
+    @include media-breakpoint-up(md){
+        padding-top: 29px;
+        padding-bottom: 30px;
+    }
+    @include media-breakpoint-up(lg){
+        padding-top: 29px;
+        padding-bottom: 31px;
+    }
 }
