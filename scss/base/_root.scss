@@ -152,10 +152,6 @@ input{
 }
 
 
-.cont-non{
-}
-
-
 .grid-hist{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -223,4 +219,26 @@ input{
     height: 40px;
     background-color: yellow;
     border: 1px solid black;
+}
+
+#detail-content{
+    p{
+        padding-bottom: 35px;
+        @include media-breakpoint-up(md){
+            padding-bottom: 40px;
+        }
+        @include media-breakpoint-up(lg){
+            padding-bottom: 50px;
+        }
+    }
+
+    img{
+        padding-bottom: 35px;
+        @include media-breakpoint-up(md){
+            padding-bottom: 40px;
+        }
+        @include media-breakpoint-up(lg){
+            padding-bottom: 50px;
+        }
+    }
 }

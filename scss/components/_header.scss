@@ -73,7 +73,7 @@ header{
         will-change: transform;
     }
 
-    &.headroom--not-top{
+    &.headroom--not-top, &.not-hero{
         background-color: $offwhite;
         color: $black;
         .circle-menu{
